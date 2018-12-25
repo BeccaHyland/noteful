@@ -9,7 +9,6 @@
 ...
 
 #### Configuration
-AWS Cloud Formation Configuration provided by [markhopson](https://github.com/markhopson/cloudformation-serverless-api)
 
 #### Test Suite
 * How to run the test suite
