@@ -1,23 +1,21 @@
-# README
+# Noteful
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Noteful is a RESTful AWS API with a Rails front-end that _creates_ and _tests_ services to retrieve and present data from AWS API Gateway.
 
-Things you may want to cover:
-
-* Ruby version
+* Rails version: 5.2.2
+* Ruby version: 2.4.1
 
 * System dependencies
+...
 
-* Configuration
+#### Configuration
+AWS Cloud Formation Configuration provided by [markhopson](https://github.com/markhopson/cloudformation-serverless-api)
 
-* Database creation
-
-* Database initialization
-
+#### Test Suite
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+#### Database
+AWS DynamoDB
 
 * Deployment instructions
 
