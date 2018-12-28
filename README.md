@@ -16,6 +16,8 @@ Visit Noteful deployed on Heroku [here](https://stark-peak-61498.herokuapp.com/)
 
 ### Video - Check out Noteful!
 Video 1: Filtering and filling out "Add New Note" Form
+![](https://media.giphy.com/media/2zZlWKzrNqXLroQxOH/giphy.gif)
+
 <iframe src="https://giphy.com/embed/2zZlWKzrNqXLroQxOH" width="480" height="246" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/2zZlWKzrNqXLroQxOH">via GIPHY</a></p>
 
 Video 2: New Note added, API Gateway deploy history, visit app on Heroku to see new Note there
