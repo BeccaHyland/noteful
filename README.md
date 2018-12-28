@@ -36,3 +36,8 @@ To run a copy of Noteful locally:
 3. Then `rake db:create` (Noteful doesn't use a local database, but this will remove the db error)
 4. Run test suite: `rspec`
 5. To run the app locally: `rails s`, then navigate in browser to `localhost:3000`
+
+#### Rails API service model
+Check out Noteful's Rails service that contacts API Gateway:
+<img width="1409" alt="screen shot 2018-12-28 at 5 42 23 pm" src="https://user-images.githubusercontent.com/39714935/50530045-18f5a700-0ac8-11e9-89f7-99bb1b2e61c1.png">
+
