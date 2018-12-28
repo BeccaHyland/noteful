@@ -24,6 +24,9 @@ feature 'visitor sees notes' do
       # and see all notes
       # and from the dropdown to sort by tag I select "Hobby"
       # then I only see notes with the Tag "Hobby"
+
+      # functionality complete
+      # postponing further testing
     end
   end
 end

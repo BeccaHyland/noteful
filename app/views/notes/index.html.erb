@@ -8,6 +8,8 @@
   </ul>
 <% end %>
 
+<%= link_to "Add New Note", new_note_path %><br><br>
+
 <h2>Filter Notes</h2>
 <p> Choose a Tag below to see only Notes in that category </p>
 <%= form_tag :notes, method: :get do %>
