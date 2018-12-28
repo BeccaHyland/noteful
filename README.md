@@ -15,10 +15,10 @@ Noteful is a RESTful AWS API with a Rails front-end to retrieve data from, and p
 Visit Noteful deployed on Heroku [here](https://stark-peak-61498.herokuapp.com/)
 
 ### Video - Check out Noteful!
-Video 1: Filtering all notes by Tag and filling out "Add New Note" form
+Video 1: Filtering all notes by Tag and filling out "Add New Note" form, link: https://giphy.com/gifs/2zZlWKzrNqXLroQxOH
 ![](https://media.giphy.com/media/2zZlWKzrNqXLroQxOH/giphy.gif)
 
-Video 2: New Note added, API Gateway deploy history, visit app on Heroku to see new Note there
+Video 2: New Note added, API Gateway deploy history, visit app on Heroku to see new Note there, link: http://www.giphy.com/gifs/dK0DhJae4WTV8sGajv
 ![](https://media.giphy.com/media/dK0DhJae4WTV8sGajv/giphy.gif)
 
 ### Known Issues
