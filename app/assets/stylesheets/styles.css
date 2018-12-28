@@ -1,0 +1,23 @@
+/* pink: D496A7 */
+/* yellow: FFFF99 */
+/* purple gray: 5D576B */
+
+body {
+  background-color: #FFFF99;
+  color: #5D576B;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+}
+
+h1 {
+  color: #5D576B;
+  font-family: 'Righteous', cursive;
+  font-size: 40px;
+}
+
+.body-containers {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px 30px;
+}
