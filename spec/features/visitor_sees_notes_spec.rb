@@ -10,7 +10,6 @@ feature 'visitor sees notes' do
 
       # I see a list of all valid notes from the API endpoint
       expect(page).to have_css(".note", count: 4)
-
       # Each note has a description and a tag
       within(first(".note")) do
         expect(page).to have_css(".description")

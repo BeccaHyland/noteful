@@ -1,5 +1,5 @@
 class NotesController < ApplicationController
   def index
-    @notes = NoteFilter.new
+    @note_filter = NoteFilter.new
   end
 end

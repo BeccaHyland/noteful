@@ -1,0 +1,9 @@
+<h1>Welcome to Noteful<h1>
+<h2>All Notes<h2>
+<% @note_filter.notes.each do |note| %>
+  <ul class="note">
+    <p class="description">Note: <%= note.description %> <p>
+    <p class="tag">Tag: <%= note.tag %> <p><br>
+  </ul>
+
+<% end %>
