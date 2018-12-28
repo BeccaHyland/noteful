@@ -1,7 +1,9 @@
 <h1>Add a New Note</h1>
 <%= form_tag :notes, method: :post do %>
   <div class="new_note">
-    <p>Enter a description for the new Note:</p><input type="text" maxlength="250" class="note[description]"><br>
+    <%= label_tag(:description, "Enter a description for the new Note:")%>
+    <%= text_field_tag(:description) %>
+      <!-- <input type="text" maxlength="250" class="note[description]"><br> -->
     <p>Select a Category tag for the new Note:</p>
     <%= select_tag :tag, options_for_select(["Work", "Personal", "Hobbies"]), include_blank: true %>
     <%= submit_tag "Submit New Note" %>
