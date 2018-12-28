@@ -4,7 +4,7 @@ class NoteFilter
   end
 
   def notes
-    @notes ||= service.note_search.map do |note_data|
+    @notes ||= service.all_notes.map do |note_data|
       Note.new(note_data)
     end
   end
