@@ -8,7 +8,6 @@ class NotesController < ApplicationController
 
   def create
     service.post_note(note_params.to_json)
-    flash[:notice] = "Successfully added new Note: '#{note_params[:description]}'"
     redirect_to notes_path
   end
 
