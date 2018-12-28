@@ -12,6 +12,6 @@ class NoteFilter
   private
 
   def service
-    NotefulService.new({filter: @filter})
+    NotefulService.new
   end
 end
