@@ -9,7 +9,7 @@ feature 'visitor sees notes' do
       expect(page).to have_content("Welcome to Noteful")
 
       # I see a list of all valid notes from the API endpoint
-      expect(page).to have_css(".note", count: 4)
+      expect(page).to have_css(".note")
       # Each note has a description and a tag
       within(first(".note")) do
         expect(page).to have_css(".description")

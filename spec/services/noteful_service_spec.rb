@@ -7,8 +7,8 @@ describe NotefulService do
         service = NotefulService.new
 
         expect(service.all_notes).to be_an(Array)
-        expect(service.all_notes.second).to have_key(:Description)
-        expect(service.all_notes.second).to have_key(:Tag)
+        expect(service.all_notes.first).to have_key(:Description)
+        expect(service.all_notes.first).to have_key(:Tag)
 
       end
     end
