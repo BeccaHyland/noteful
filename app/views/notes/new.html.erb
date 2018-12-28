@@ -1,12 +1,19 @@
-<h1>Add a New Note</h1>
-<%= form_tag :notes, method: :post do %>
-  <div class="new_note">
-    <%= label_tag(:description, "Enter a description for the new Note:")%>
-    <%= text_field_tag(:description) %>
-    <p>Select a Category tag for the new Note:</p>
-    <%= select_tag :tag, options_for_select(["Work", "Personal", "Hobbies"]), include_blank: true %>
-    <%= submit_tag "Submit New Note" %>
-  </div>
-<% end %>
+<div class="body-containers">
+  <h1>Add a New Note</h1>
+</div>
 
-<%= link_to "Back to All Notes", notes_path %><br>
+<div class="body-containers">
+  <%= form_tag :notes, method: :post do %>
+    <div class="new_note">
+      <%= label_tag(:description, "Enter a description for the new Note:")%>
+      <%= text_field_tag(:description) %>
+      <p>Select a Category tag for the new Note:</p>
+      <%= select_tag :tag, options_for_select(["Work", "Personal", "Hobbies"]), include_blank: true %>
+      <%= submit_tag "Submit New Note" %>
+    </div>
+  <% end %>
+</div>
+
+  <div class="body-containers">
+    <%= link_to "Back to All Notes", notes_path %><br>
+  </div>
