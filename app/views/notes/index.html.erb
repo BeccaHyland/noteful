@@ -1,0 +1,19 @@
+<h1>Welcome to Noteful<h1>
+<%= link_to "Add New Note", new_note_path %><br>
+<h2>Here are your notes:<h2>
+
+<% @note_filter.notes.each do |note| %>
+  <ul class="note">
+    <p class="description">Note: <%= note.description %> <p>
+    <p class="tag">Tag: <%= note.tag %> <p><br>
+  </ul>
+<% end %>
+
+<h1>Filter Notes</h1>
+<h3> Choose a Tag below to see only Notes in that category </h3>
+<%= form_tag :notes, method: :get do %>
+  <div class="select">
+    <%= select_tag :tag, options_for_select(["All Tags", "Work", "Personal", "Hobbies"]) %>
+    <%= submit_tag "Submit Filter" %>
+  </div>
+<% end %>
