@@ -1,9 +1,11 @@
-/* pink: D496A7 */
+/* light pink: F1DEDE */
+/* gum pink: FFA95AB */
+/* eraser pink: D496A7 */
 /* yellow: FFFF99 */
 /* purple gray: 5D576B */
 
 body {
-  background-color: #FFFF99;
+  background-color: #F1DEDE;
   color: #5D576B;
   font-family: 'EB Garamond', serif;
   font-size: 18px;
@@ -20,4 +22,31 @@ h1 {
   flex-direction: column;
   align-items: left;
   padding: 10px 30px;
+}
+
+.new-body-containers {
+  padding: 10px 30px;
+  text-align: center;
+}
+
+#new-headline {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+#new-note {
+  background: #FFFF99;
+  width: 280px;
+}
+
+#note-labels {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 16pt;
+}
+
+.centerizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
