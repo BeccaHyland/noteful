@@ -1,23 +1,122 @@
-/* pink: D496A7 */
+/* light pink: F1DEDE */
+/* gum pink: FFA5AB */
+/* eraser pink: D496A7 */
 /* yellow: FFFF99 */
 /* purple gray: 5D576B */
 
 body {
-  background-color: #FFFF99;
+  background-color: #F1DEDE;
   color: #5D576B;
-  font-family: 'EB Garamond', serif;
+  font-family: 'Gochi Hand', cursive;
   font-size: 18px;
 }
 
 h1 {
+  padding-top: 20px;
   color: #5D576B;
   font-family: 'Righteous', cursive;
   font-size: 40px;
 }
 
+#add-header {
+}
+
 .body-containers {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
+  padding: 1px 30px;
+}
+
+.new-body-containers {
   padding: 10px 30px;
+  text-align: center;
+  color: #5D576B;
+}
+
+#new-headline {
+  padding-bottom: 20px;
+}
+
+#new-note {
+  background: #FFFF99;
+  width: 280px;
+}
+
+#note-labels {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 16pt;
+}
+
+.centerizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+th, td {
+  padding: 15px;
+}
+
+tr:nth-child(odd) {
+  background-color: #FFFF99
+}
+
+#table-headers {
+  background: #5D576B;
+  color: #FFFF99;
+  font-size: 20px;
+  text-align: left;
+}
+
+#table-header-boxes {
+}
+
+.button {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 18px;
+  background: #FFFF99;
+}
+
+.button:hover {
+  background: #5D576B;
+  color: #FFFF99;
+  cursor: pointer;
+}
+
+.tag-dropdown {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 18px;
+  background: #5D576B;
+  color: #FFFF99;
+  transition: 0.2s all ease;
+}
+
+.tag-dropdown:hover {
+  cursor: pointer;
+}
+
+.new-button {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 18px;
+  background: #5D576B;
+  color: #F1DEDE;
+}
+
+.new-button:hover {
+  background: #F1DEDE;
+  color: #FFFF99;
+  transition: 0.2s all ease;
+}
+
+.new-dropdown {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 18px;
+  background: #5D576B;
+  color: #F1DEDE;
+}
+
+.new-dropdown:hover {
+  cursor: pointer;
 }
