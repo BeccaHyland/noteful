@@ -12,6 +12,7 @@ body {
 }
 
 h1 {
+  padding-top: 20px;
   color: #5D576B;
   font-family: 'Righteous', cursive;
   font-size: 40px;
@@ -20,8 +21,8 @@ h1 {
 .body-containers {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  padding: 10px 30px;
+  align-items: center;
+  padding: 1px 30px;
 }
 
 .new-body-containers {
@@ -31,7 +32,6 @@ h1 {
 }
 
 #new-headline {
-  padding-top: 40px;
   padding-bottom: 20px;
 }
 
@@ -50,4 +50,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#here-are-your-notes {
+  font-size: 18pt;
 }
