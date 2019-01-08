@@ -14,6 +14,7 @@ feature 'visitor sees notes' do
       within(first(".note")) do
         expect(page).to have_css(".description")
         expect(page).to have_css(".tag")
+        expect(page).to have_css(".date")
       end
       # A note is valid when it has 1 of 3 tags "Work", "Personal", "Hobby"
     end

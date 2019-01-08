@@ -25,9 +25,9 @@
     </tr>
     <% @note_filter.notes.each do |note| %>
     <tr class="note">
-      <td><%= note.description %></td>
-      <td><%= note.tag %></td>
-      <td>placeholder</td>
+      <td class="description"><%= note.description %></td>
+      <td class="tag"><%= note.tag %></td>
+      <td class="date">placeholder</td>
     </tr>
   <% end %>
 </table>
