@@ -77,7 +77,12 @@ tr:nth-child(odd) {
   font-family: 'Gochi Hand', cursive;
   font-size: 18px;
   background: #FFFF99;
+}
 
+.button:hover {
+  background: #5D576B;
+  color: #FFFF99;
+  cursor: pointer;
 }
 
 .tag-dropdown {
@@ -85,6 +90,11 @@ tr:nth-child(odd) {
   font-size: 18px;
   background: #5D576B;
   color: #FFFF99;
+  transition: 0.2s all ease;
+}
+
+.tag-dropdown:hover {
+  cursor: pointer;
 }
 
 .new-button {
@@ -94,9 +104,19 @@ tr:nth-child(odd) {
   color: #F1DEDE;
 }
 
+.new-button:hover {
+  background: #F1DEDE;
+  color: #FFFF99;
+  transition: 0.2s all ease;
+}
+
 .new-dropdown {
   font-family: 'Gochi Hand', cursive;
   font-size: 18px;
   background: #5D576B;
   color: #F1DEDE;
+}
+
+.new-dropdown:hover {
+  cursor: pointer;
 }
