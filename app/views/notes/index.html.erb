@@ -21,10 +21,18 @@
 </div>
 
 <div class="body-containers">
-  <% @note_filter.notes.each do |note| %>
-    <ul class="note">
-      <p class="description">Note: <%= note.description %> <p>
-      <p class="tag">Tag: <%= note.tag %> <p><br>
-    </ul>
+  <table style="width:100%">
+    <tr>
+      <th>Description</th>
+      <th>Tag</th>
+      <th>Date</th>
+    </tr>
+    <% @note_filter.notes.each do |note| %>
+    <tr class="note">
+      <td><%= note.description %></td>
+      <td><%= note.tag %></td>
+      <td>placeholder</td>
+    </tr>
   <% end %>
+</table>
 </div>
