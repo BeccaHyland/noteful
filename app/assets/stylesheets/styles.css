@@ -1,5 +1,5 @@
 /* light pink: F1DEDE */
-/* gum pink: FFA95AB */
+/* gum pink: FFA5AB */
 /* eraser pink: D496A7 */
 /* yellow: FFFF99 */
 /* purple gray: 5D576B */
@@ -7,7 +7,7 @@
 body {
   background-color: #F1DEDE;
   color: #5D576B;
-  font-family: 'EB Garamond', serif;
+  font-family: 'Gochi Hand', cursive;
   font-size: 18px;
 }
 
@@ -27,6 +27,7 @@ h1 {
 .new-body-containers {
   padding: 10px 30px;
   text-align: center;
+  color: #5D576B;
 }
 
 #new-headline {
