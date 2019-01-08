@@ -17,15 +17,11 @@
 </div><br>
 
 <div class="body-containers">
-  <h2 id="here-are-your-notes">Here are your notes:<h2><br>
-</div>
-
-<div class="body-containers">
   <table style="width:100%">
-    <tr>
-      <th>Description</th>
-      <th>Tag</th>
-      <th>Date</th>
+    <tr id="table-headers">
+      <th class="table-header-boxes">Description</th>
+      <th class="table-header-boxes">Tag</th>
+      <th class="table-header-boxes">Date</th>
     </tr>
     <% @note_filter.notes.each do |note| %>
     <tr class="note">

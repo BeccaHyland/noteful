@@ -52,6 +52,20 @@ h1 {
   align-items: center;
 }
 
-#here-are-your-notes {
-  font-size: 18pt;
+th, td {
+  padding: 15px;
+}
+
+tr:nth-child(odd) {
+  background-color: #FFFF99
+}
+
+#table-headers {
+  background: #5D576B;
+  color: #FFFF99;
+  font-size: 20px;
+  text-align: left;
+}
+
+#table-header-boxes {
 }
