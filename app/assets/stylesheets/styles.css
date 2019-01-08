@@ -18,6 +18,9 @@ h1 {
   font-size: 40px;
 }
 
+#add-header {
+}
+
 .body-containers {
   display: flex;
   flex-direction: column;
@@ -68,4 +71,32 @@ tr:nth-child(odd) {
 }
 
 #table-header-boxes {
+}
+
+.button {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 18px;
+  background: #FFFF99;
+
+}
+
+.tag-dropdown {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 18px;
+  background: #5D576B;
+  color: #FFFF99;
+}
+
+.new-button {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 18px;
+  background: #5D576B;
+  color: #F1DEDE;
+}
+
+.new-dropdown {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 18px;
+  background: #5D576B;
+  color: #F1DEDE;
 }

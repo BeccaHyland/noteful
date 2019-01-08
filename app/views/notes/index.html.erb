@@ -10,14 +10,14 @@
   <h3> Choose a Tag below to see only Notes in that category </h3><br>
   <%= form_tag :notes, method: :get do %>
   <div class="select">
-    <%= select_tag :tag, options_for_select(["All Tags", "Work", "Personal", "Hobbies"]) %>
-    <%= submit_tag "Submit Filter" %>
+    <%= select_tag(:tag, options_for_select(["All Tags", "Work", "Personal", "Hobbies"]), {:class => "tag-dropdown"}) %>
+    <%= submit_tag "Submit Tag", class: "button" %>
   </div>
   <% end %>
 </div><br>
 
 <div class="body-containers">
-  <table style="width:100%">
+  <table style="width:90%">
     <tr id="table-headers">
       <th class="table-header-boxes">Description</th>
       <th class="table-header-boxes">Tag</th>
