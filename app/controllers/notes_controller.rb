@@ -1,6 +1,6 @@
 class NotesController < ApplicationController
   def index
- and       @note_filter = NoteFilter.new(params[:tag])
+    @note_filter = NoteFilter.new(params[:tag])
   end
 
   def new
