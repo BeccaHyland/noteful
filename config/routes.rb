@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root 'notes#index'
   resources :notes, only: [:index, :new, :create]
 
+  post '/sort_date', to: 'notes#sort_date'
+
 end

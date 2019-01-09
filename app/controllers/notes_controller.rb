@@ -3,6 +3,11 @@ class NotesController < ApplicationController
     @note_filter = NoteFilter.new(params[:tag])
   end
 
+  def sort_date
+    @note_filter = NoteFilter.new("date")
+    render :index
+  end
+
   def new
   end
 
