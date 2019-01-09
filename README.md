@@ -4,30 +4,27 @@ Noteful is a RESTful AWS API with a Rails front-end to retrieve data from, and p
 * Rails version: 5.2.2
 * Ruby version: 2.4.1
 
-### Status of requests from Product Owner
+Visit Noteful deployed on Heroku [here](https://stark-peak-61498.herokuapp.com/)
+
+### Style: Before and After
+<img width="1018" alt="screen shot 2019-01-08 at 10 43 17 pm" src="https://user-images.githubusercontent.com/39714935/50879090-dd47c080-1396-11e9-8bfd-8db1ceb899ef.png">
+
+### Status of requests from Product Owner (Iteration 1)
 1) Add New Note - functional
 2) Display All Notes - functional
 3) Filter Notes FE Prototype (less performant) - functional
-4) Filter Notes on API (more performant) - awaiting bug fix (see draft AWS Lambda below)
+4) Filter Notes on API (more performant) - draft lambda (see files)
 
-<img width="1438" alt="screen shot 2018-12-28 at 3 58 41 pm" src="https://user-images.githubusercontent.com/39714935/50528223-fc06a700-0aba-11e9-9d09-9e5fdaefe228.png">
-
-Visit Noteful deployed on Heroku [here](https://stark-peak-61498.herokuapp.com/)
-
-### Video - Check out Noteful!
-Video 1: Filtering all notes by Tag and filling out "Add New Note" form, link: https://giphy.com/gifs/2zZlWKzrNqXLroQxOH
-![](https://media.giphy.com/media/2zZlWKzrNqXLroQxOH/giphy.gif)
-
-Video 2: New Note added, API Gateway deploy history, visit app on Heroku to see new Note there, link: http://www.giphy.com/gifs/dK0DhJae4WTV8sGajv
-![](https://media.giphy.com/media/dK0DhJae4WTV8sGajv/giphy.gif)
+### Issues Resolved (Iteration 2)
+* implement Continuous Integration
+* increase test coverage from 50% to 90%+
+* re-style application
+* filter by date newest to oldest
 
 ### Known Issues
 Below are areas in development:
 * BE database result filter (see draft solution above)
 * restrictions on AWS IAM role (security)
-* filter by date
-* new Note maxlength (250) for description
-
 
 #### How to Use
 To run a copy of Noteful locally:
