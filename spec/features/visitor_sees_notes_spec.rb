@@ -19,6 +19,19 @@ feature 'visitor sees notes' do
       # A note is valid when it has 1 of 3 tags "Work", "Personal", "Hobby"
     end
 
+    it 'allows visitor to sort notes by date' do
+      visit '/'
+
+      expect(page).to have_button("Newest to Oldest")
+      click_on("Newest to Oldest")
+
+      within(first(".note")) do
+        expect(page).to have_content("2019-01-08")
+        expect(page).to_not have_content("2019-01-09")
+      end
+
+    end
+
     it 'allows visitor to sort notes by tag' do
       #user story
       # when I visit the root page

@@ -12,8 +12,12 @@ class NoteFilter
   end
 
   def filter_notes
-    @notes = @notes.find_all do |note|
-      note.tag == @filter
+    if @filter == "date"
+      @notes = @notes.sort_by { |note| note.dateCreated } ###
+    else
+      @notes = @notes.find_all do |note|
+        note.tag == @filter
+      end
     end
   end
 
