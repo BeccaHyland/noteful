@@ -19,17 +19,18 @@ feature 'visitor sees notes' do
       # A note is valid when it has 1 of 3 tags "Work", "Personal", "Hobby"
     end
 
-    it 'allows visotor to sort notes by date' do
+    it 'allows visitor to sort notes by date' do
       visit '/'
 
       within(first(".note")) do
-        expect(note.description).to eq("2018-01-08")
+        expect(page).to have_content("2019-01-08")
       end
       expect(page).to have_button("Sort by Date oldest/newest")
       click_on("Sort by Date oldest/newest")
 
       within(first(".note")) do
-        expect(note.description).to eq("2018-01-09")
+        expect(page).to have_content("2019-01-09")
+        expect(page).to_not have_content("2019-01-08")
       end
 
     end
