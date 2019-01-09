@@ -7,7 +7,9 @@ class NotesController < ApplicationController
   end
 
   def create
-    service.post_note(note_params.to_json)
+    params_plus_date = note_params
+    params_plus_date[:dateCreated] = Date.today
+    service.post_note(params_plus_date.to_json)
     redirect_to notes_path
   end
 
