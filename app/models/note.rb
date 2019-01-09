@@ -4,8 +4,8 @@ class Note
               :dateCreated
 
   def initialize(data)
-    @description = data[:description]
-    @tag = data[:tag]
+    @description = data[:Description]
+    @tag = data[:Tag]
     @dateCreated = data[:dateCreated]
   end
 end
