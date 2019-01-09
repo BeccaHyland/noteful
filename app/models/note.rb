@@ -1,9 +1,11 @@
 class Note
   attr_reader :description,
-              :tag
+              :tag,
+              :dateCreated
 
   def initialize(data)
-    @description = data[:Description]
-    @tag = data[:Tag]
+    @description = data[:description]
+    @tag = data[:tag]
+    @dateCreated = data[:dateCreated]
   end
 end
