@@ -26,11 +26,6 @@ Visit Noteful deployed on Heroku [here](https://stark-peak-61498.herokuapp.com/)
 Check out the recent API Gateway deployment history:
 <img width="1440" alt="screen shot 2019-01-18 at 10 08 00 am" src="https://user-images.githubusercontent.com/39714935/51401909-3e933080-1b09-11e9-9d31-2dfdd4236a96.png">
 
-### Known Issues
-Below are areas in development:
-* BE database result filter (see draft solution above)
-* restrictions on AWS IAM role (security)
-
 #### How to Use
 To run a copy of Noteful locally:
 1. Clone this repo
