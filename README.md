@@ -23,6 +23,9 @@ Visit Noteful deployed on Heroku [here](https://stark-peak-61498.herokuapp.com/)
 * filter by date newest to oldest - in development
 * filter Notes at API layer instead of within application - in development
 
+Check out the recent API Gateway deployment history:
+<img width="1440" alt="screen shot 2019-01-18 at 10 08 00 am" src="https://user-images.githubusercontent.com/39714935/51401909-3e933080-1b09-11e9-9d31-2dfdd4236a96.png">
+
 ### Known Issues
 Below are areas in development:
 * BE database result filter (see draft solution above)
@@ -37,6 +40,6 @@ To run a copy of Noteful locally:
 5. To run the app locally: `rails s`, then navigate in browser to `localhost:3000`
 
 #### Rails API service model
-Check out Noteful's Rails service that contacts API Gateway:
+Here is Noteful's Rails service that contacts API Gateway:
 <img width="1409" alt="screen shot 2018-12-28 at 5 42 23 pm" src="https://user-images.githubusercontent.com/39714935/50530045-18f5a700-0ac8-11e9-89f7-99bb1b2e61c1.png">
 
