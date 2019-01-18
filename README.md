@@ -1,4 +1,5 @@
 # Noteful
+### *currently down for performance enhancements*
 Noteful is a RESTful AWS API with a Rails front-end to retrieve data from, and post entries to, AWS API Gateway.
 * database: AWS Dynamo DB
 * Rails version: 5.2.2
@@ -15,11 +16,12 @@ Visit Noteful deployed on Heroku [here](https://stark-peak-61498.herokuapp.com/)
 3) Filter Notes FE Prototype (less performant) - functional
 4) Filter Notes on API (more performant) - draft lambda (see files)
 
-### Issues Resolved (Iteration 2)
-* implement Continuous Integration
-* increase test coverage from 50% to 90%+
-* re-style application
-* filter by date newest to oldest
+### Performance Improvements in Development (Iteration 2)
+* implement Continuous Integration - complete
+* increase test coverage from 50% to 90%+ - complete
+* re-style application - complete
+* filter by date newest to oldest - in development
+* filter Notes at API layer instead of within application - in development
 
 ### Known Issues
 Below are areas in development:
