@@ -13,7 +13,7 @@
         <%= label_tag 'description', 'description'%><br>
         <%= text_field_tag 'description', nil, size: 30, maxlength: 250, placeholder: "Your note here"%><br><br>
         <p>category</p>
-        <%= select_tag(:tag, options_for_select(["Work", "Personal", "Hobbies"]),{:class => "new-dropdown"})%><br><br><br>
+        <%= select_tag(:tag, options_for_select(["Work", "Personal", "Hobby"]),{:class => "new-dropdown"})%><br><br><br>
         <%= submit_tag "Submit New Note", class: "new-button" %><br>
       </div>
     <% end %>

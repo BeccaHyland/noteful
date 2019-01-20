@@ -31,12 +31,34 @@ feature 'visitor sees notes' do
 
     it 'allows visitor to sort notes by tag' do
       # when I visit the root page
+      visit '/'
       # and see all notes
-      # and from the dropdown to sort by tag I select "Hobby"
-      # then I only see notes with the Tag "Hobby"
+      expect(page).to have_css(".note")
 
-      # functionality complete
-      # postponing further testing
+      #create a note with tag Work
+      click_on("Add New Note")
+      fill_in :description, with: "Study Golang"
+      select "Work", from: :tag
+      click_on("Submit New Note")
+      expect(current_path).to eq(notes_path)
+      expect(page).to have_content("Study Golang")
+
+      #create a note with tag Hobby
+      click_on("Add New Note")
+      fill_in :description, with: "Play with kitten"
+      select "Hobby", from: :tag
+      click_on("Submit New Note")
+      expect(current_path).to eq(notes_path)
+      expect(page).to have_content("Play with kitten")
+
+      # and from the dropdown to sort by tag I select "Hobby"
+      select "Hobby", from: :tag
+      click_on("Submit Tag")
+
+      # then I only see notes with the Tag "Hobby"
+      within(first(".note")) do
+        expect(page).to_not have_content("Work")
+      end
     end
   end
 end
