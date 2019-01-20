@@ -10,7 +10,7 @@ feature 'visitor creates note' do
       expect(current_path).to eq(new_note_path)
 
       fill_in :description, with: "Complete testing"
-      select "work", from: :tag
+      select "Work", from: :tag
 
       click_on("Submit New Note")
 

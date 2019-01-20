@@ -7,7 +7,9 @@ class NoteFilter
     @notes ||= service.all_notes.select{|i| i[:description] && i[:tag]}.map do |note_data|
       Note.new(note_data)
     end
-    filter_notes unless (@filter == nil) || (@filter == "All Tags")
+    if (@filter != nil) && (@filter != "All Tags")
+      filter_notes
+    end
     @notes
   end
 
