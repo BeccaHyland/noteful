@@ -1,7 +1,5 @@
 class NotefulService
   attr_reader :tagFilter
-  
-  #added the below initialize
   def initialize(tagFilter = nil)
     @tagFilter = tagFilter
   end
