@@ -1,11 +1,11 @@
 class NotefulService
   attr_reader :tagFilter
-  def initialize(tagFilter = nil)
+  def initialize(tagFilter = "All Tags")
     @tagFilter = tagFilter
   end
 
   def all_notes
-    get_json("https://j6f5btrhp8.execute-api.us-east-2.amazonaws.com/production/notes")
+    get_json("https://j6f5btrhp8.execute-api.us-east-2.amazonaws.com/production/notes?tagFilter=#{@tagFilter}")
   end
 
   def post_note(note_params)
