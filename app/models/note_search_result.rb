@@ -1,4 +1,4 @@
-class NoteFilter
+class NoteSearchResult
   def initialize(filter = nil) *****
     @filter = filter
   end

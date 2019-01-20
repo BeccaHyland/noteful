@@ -1,10 +1,10 @@
 class NotesController < ApplicationController
   def index
-    @note_filter = NoteFilter.new(params[:tag])
+    @note_search_result = NoteSearchResult.new(params[:tag])
   end
 
   def sort_date
-    @note_filter = NoteFilter.new("date")
+    @note_search_result = NoteFilter.new("date")
     render :index
   end
 
