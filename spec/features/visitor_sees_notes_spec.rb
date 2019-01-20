@@ -26,7 +26,7 @@ feature 'visitor sees notes' do
       click_on("Newest to Oldest")
 
       within(first(".note")) do
-        expect(page).to have_content("2019-01-08")
+        expect(page).to have_content("2019")
         expect(page).to_not have_content("2019-01-09")
       end
 
