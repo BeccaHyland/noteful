@@ -3,7 +3,7 @@ require 'rails_helper'
 describe NotefulService do
   context 'instance methods' do
     context '@tagFilter' do
-      it 'passes the service an argument at initialize or defaults to All Tags' do
+      it 'passes service an argument at initialize or defaults to All Tags' do
         ns1 = NotefulService.new
         ns2 = NotefulService.new("Personal")
 

@@ -8,20 +8,14 @@ class NoteSearchResult
     @notes ||= service.all_notes.select{|i| i[:description] && i[:tag]}.map do |note_data|
       Note.new(note_data)
     end
-    if (@filter != nil) && (@filter != "All Tags")
-      filter_notes
+    if (@filter == "date")
+      sort_by_date
     end
     @notes
   end
 
-  def filter_notes
-    if @filter == "date"
-      @notes = @notes.sort_by { |note| note.dateCreated } ###
-    else
-      @notes = @notes.find_all do |note|
-        note.tag == @filter
-      end
-    end
+  def sort_by_date
+    @notes = @notes.sort_by { |note| note.dateCreated }
   end
 
   private

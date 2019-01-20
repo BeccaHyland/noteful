@@ -4,7 +4,7 @@ class NotesController < ApplicationController
   end
 
   def sort_date
-    @note_search_result = NoteFilter.new("date")
+    @note_search_result = NoteSearchResult.new("date")
     render :index
   end
 
