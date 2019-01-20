@@ -1,8 +1,9 @@
 class NoteFilter
-  def initialize(filter = nil)
+  def initialize(filter = nil) *****
     @filter = filter
   end
 
+#stop filtering notes here in the FE, just return them all
   def notes
     @notes ||= service.all_notes.select{|i| i[:description] && i[:tag]}.map do |note_data|
       Note.new(note_data)
@@ -26,6 +27,6 @@ class NoteFilter
   private
 
   def service
-    NotefulService.new
+    NotefulService.new(@filter)
   end
 end
