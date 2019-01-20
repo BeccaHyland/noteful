@@ -4,7 +4,7 @@ class NoteFilter
   end
 
   def notes
-    @notes ||= service.all_notes.select{|i| i[:Description] && i[:Tag]}.map do |note_data|
+    @notes ||= service.all_notes.select{|i| i[:description] && i[:tag]}.map do |note_data|
       Note.new(note_data)
     end
     if (@filter != nil) && (@filter != "All Tags")
