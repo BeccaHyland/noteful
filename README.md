@@ -1,4 +1,5 @@
 # Noteful
+[![Build Status](https://travis-ci.com/BeccaHyland/mentor_match_api.svg?branch=master)](https://travis-ci.com/BeccaHyland/mentor_match_api)
 Noteful is a RESTful AWS API with a Rails front-end to retrieve data from, and post entries to, AWS API Gateway.
 * database: AWS Dynamo DB
 * Rails version: 5.2.2
