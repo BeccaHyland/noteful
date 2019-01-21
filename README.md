@@ -1,22 +1,32 @@
 [![Build Status](https://travis-ci.com/BeccaHyland/noteful.svg?branch=master)](https://travis-ci.com/BeccaHyland/noteful) [![Waffle.io - Columns and their card count](https://badge.waffle.io/BeccaHyland/noteful.svg?columns=all)](https://waffle.io/BeccaHyland/noteful)
 
 # Noteful
-Noteful is a RESTful AWS API with a Rails front-end to retrieve/display data from, and post entries to, AWS API Gateway.
-* database: AWS Dynamo DB
+Noteful is a RESTful AWS API with a Rails front-end to retrieve/display data from, and post entries to, AWS API Gateway
+* AWS Lambda: Node.js 8.10
+* database: AWS DynamoDB
 * Rails version: 5.2.2
 * Ruby version: 2.4.1
 
 ### Iteration 2 underway
 Visit Noteful deployed on Heroku [here](https://stark-peak-61498.herokuapp.com/)
 
-### Style: Before and After
+#### Noteful's Database (AWS DynamoDB)
+<img width="996" alt="noteful3 table" src="https://user-images.githubusercontent.com/39714935/51448003-a354b380-1ce0-11e9-8b7f-fde05a8ef702.png">
+
+#### Style: Iteration 1 and Iteration 2
 <img width="1018" alt="screen shot 2019-01-08 at 10 43 17 pm" src="https://user-images.githubusercontent.com/39714935/50879090-dd47c080-1396-11e9-8bfd-8db1ceb899ef.png">
+
+#### AWS Lambda: Get All Notes
+<img width="1057" alt="listnotes lambda" src="https://user-images.githubusercontent.com/39714935/51448030-d72fd900-1ce0-11e9-8ddc-d672056546ad.png">
+
+#### AWS Lambda: Post New Note
+<img width="1057" alt="createnote lambda" src="https://user-images.githubusercontent.com/39714935/51448060-08a8a480-1ce1-11e9-9b10-353b83eec9c3.png">
 
 ### Original Requests from Product Owner (Iteration 1)
 1) Add New Note - functional
 2) Display All Notes - functional
 3) Filter Notes FE Prototype (less performant) - functional
-4) Filter Notes on API (more performant) - draft lambda (see files)
+4) Filter Notes on API (more performant) - draft lambda (see folder: lambda)
 
 ### Performance Improvements in Development (Iteration 2)
 * implement Continuous Integration - complete
