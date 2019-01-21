@@ -1,17 +1,18 @@
-[![Build Status](https://travis-ci.com/BeccaHyland/noteful.svg?branch=master)](https://travis-ci.com/BeccaHyland/noteful)
+[![Build Status](https://travis-ci.com/BeccaHyland/noteful.svg?branch=master)](https://travis-ci.com/BeccaHyland/noteful) [![Waffle.io - Columns and their card count](https://badge.waffle.io/BeccaHyland/noteful.svg?columns=all)](https://waffle.io/BeccaHyland/noteful)
+
 # Noteful
-Noteful is a RESTful AWS API with a Rails front-end to retrieve data from, and post entries to, AWS API Gateway.
+Noteful is a RESTful AWS API with a Rails front-end to retrieve/display data from, and post entries to, AWS API Gateway.
 * database: AWS Dynamo DB
 * Rails version: 5.2.2
 * Ruby version: 2.4.1
 
-### 1/20/19 - Iteration 2 underway - site may be down
+### Iteration 2 underway
 Visit Noteful deployed on Heroku [here](https://stark-peak-61498.herokuapp.com/)
 
 ### Style: Before and After
 <img width="1018" alt="screen shot 2019-01-08 at 10 43 17 pm" src="https://user-images.githubusercontent.com/39714935/50879090-dd47c080-1396-11e9-8bfd-8db1ceb899ef.png">
 
-### Status of requests from Product Owner (Iteration 1)
+### Original Requests from Product Owner (Iteration 1)
 1) Add New Note - functional
 2) Display All Notes - functional
 3) Filter Notes FE Prototype (less performant) - functional
